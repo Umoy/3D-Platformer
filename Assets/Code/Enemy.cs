@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour
     public Transform target;
 
     //Damage points from an attack by the player's enemy
-    public int playerDamage = 2;
+    public int playerDamage = 10;
 
 
     void Update()
