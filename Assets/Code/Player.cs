@@ -7,10 +7,13 @@ public class Player : MonoBehaviour
 {
     //Player Health
     [SerializeField]
-    private int health = 10;
+    public int health = 10;
 
+    //Player max Health
+    public int maxHealth = 10;
+    
     //Number of coins collected
-    private int coins;
+    public int coins;
 
     //The Fireball prefab and the Transform parameter of the attack point
     public GameObject fireballPrefab;
