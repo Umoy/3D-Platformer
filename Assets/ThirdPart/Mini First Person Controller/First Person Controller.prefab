@@ -431,7 +431,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distanceThreshold: 0.15
-  isGrounded: 0
+  isGrounded: 1
 --- !u!1 &1593727746557118
 GameObject:
   m_ObjectHideFlags: 0
@@ -573,7 +573,9 @@ GameObject:
   - component: {fileID: 114963311885979670}
   - component: {fileID: 114497868231759342}
   - component: {fileID: 114762042097486276}
-  - component: {fileID: 696791026}
+  - component: {fileID: 1360479730735518208}
+  - component: {fileID: 4193895253782421516}
+  - component: {fileID: 4878981651330996626}
   m_Layer: 0
   m_Name: First Person Controller
   m_TagString: Untagged
@@ -678,7 +680,7 @@ MonoBehaviour:
   headToLower: {fileID: 4490257326247362}
   crouchYHeadPosition: 1
   colliderToLower: {fileID: 136877096903737240}
---- !u!114 &696791026
+--- !u!114 &1360479730735518208
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -687,11 +689,38 @@ MonoBehaviour:
   m_GameObject: {fileID: 1773623360729482}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b73261dcf12d6ce4f89f106863931642, type: 3}
+  m_Script: {fileID: 11500000, guid: af931c353cc84e14594c29d4050034cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireballPrefab: {fileID: 4408446665747802625, guid: 7f23c5e81d7341b47bc1c47bb9326b21, type: 3}
+  fireballPrefab: {fileID: 1206498299807332555, guid: af6c1e3f046eecd4d81330aeb285600f, type: 3}
   attackPoint: {fileID: 1904149442}
+--- !u!114 &4193895253782421516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773623360729482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e68590cf364ae64cb8e88aec04d2257, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coins: 0
+--- !u!114 &4878981651330996626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773623360729482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3d09d00feba07940918dd2f2f9f6ae9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currenthealth: 10
+  maxHealth: 10
   audioSource: {fileID: 1077370986887681190}
   damageSound: {fileID: 8300000, guid: f2d39e260b0a6aa46b7249293c9e20fd, type: 3}
 --- !u!1 &1963958859065967600

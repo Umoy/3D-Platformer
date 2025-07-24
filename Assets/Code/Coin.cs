@@ -29,10 +29,10 @@ public class Coin : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            Player player = other.GetComponent<Player>();
+            CoinsCounter coins = other.GetComponent<CoinsCounter>();
 
             //The number of coins is updated
-            player.CollectCoins();
+            coins.CollectCoins();
 
             //The coin that was collected is destroyed
             Destroy(gameObject);

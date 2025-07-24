@@ -38,8 +38,9 @@ public class Enemy : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            Player player = other.GetComponent<Player>();
-            player.TakeDamage(playerDamage);
+            Health health = other.GetComponent<Health>();
+            health.TakeDamage(playerDamage);
+            
         }
     }
 }
