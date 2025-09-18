@@ -7,7 +7,7 @@ public class Bonfire : MonoBehaviour
     //Lifetime of the fire
     public float lifeTime = 15;
     //Heat transfer
-    public float heatPower = 0.1f;
+    public float heatPower = 0.3f;
 
     // Each frame the bonfire gradually fades, then disappears from the scene
     void Update()
